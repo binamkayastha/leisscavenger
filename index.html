@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- DON'T CHEATG-->
+<HTML>
+	<head>
+		<title>The Adventure</title>
+		<meta charset="utf-8">
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- JavaScript -->
+		<script src="./jquery.js"></script>
+		<script src="./jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/lettering.js/0.7.0/jquery.lettering.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script>
+			$(function () {
+				$('.tlt').textillate();
+				$('.tlt2').textillate({
+					initialDelay: 3500,
+				});
+				$('#delay3').hide().delay(8500).fadeIn("slow");
+				$("#delay4").hide().delay(8500).fadeIn("slow");
+			})
+//function testFunction() {
+//  console.log("heh")
+//}
+//function verifyFirstCode() {
+//  console.log("heh?")
+//}
+		</script>
+		<style>
+.bold {
+	font-weight: bold;
+}
+		.spoiler{
+			background-color: #0000FF;
+			transition: 0.3s;
+		}
+		.spoiler:hover{
+			background-color: white;
+		}
+		a {
+			color: #0000FF;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper indigo">
+					<div class="show-on-large hide-on-med-and-down">
+						<a href="#!" class="center brand-logo">
+							<b>Welcome to Lei's Scavenger Hunt!</b>
+						</a>
+					</div>
+					<div class="show-on-small show-on-medium hide-on-large-only">
+						<a href="#!" class="center brand-logo">
+							<b>Lei's Scavenger Hunt!</b>
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="container s12">
+
+			<div id="part1" class="center">
+				<h4 class="tlt" data-in-effect="fadeInLeftBig" data-in-shuffle="true">
+					Find all four components on the 3rd floor.  
+				</h4>
+				<h4 class="tlt" data-in-effect="fadeInRightBig" data-in-shuffle="true">
+					You've already got the button!
+				</h4>
+				<h4 class="tlt" data-in-effect="fadeInDownBig" data-in-shuffle="true">
+					The goal is to collect all the parts!
+				</h4>
+				<h3 class="tlt2 bold" data-in-effect="fadeIn">Good Luck!</h3>
+				<h4 id="delay3">Before you get started, maybe you should <b>restock</b> some items</h4>
+				<div id="delay4" class="row valign-wrapper">
+					<div class="col s4"></div>
+					<div class="input-field col s4 valign">
+						<input id="first-code" type="text" class="validate" placeholder="INPUT CODE HERE">
+					</div>
+					<div class="col s1"></div>
+					<div class="col s1 valign">
+						<button class="btn waves-effect waves-light light-blue"
+							style="vertical-align:bottom;"
+			 onclick="verifyFirstCode()">
+							Submit<i class="material-icons right">send</i>
+						</button>
+					</div>
+					<div class="col s2"></div>
+				</div>
+			</div>
+
+
+			<div id="part2" class="center" style="display: none">
+				<h4>Part two revealed!</h4>
+				Sorry no more fancy animations :P (I rushed this a bit)<br>
+				<a href="egassemsdrawkcab.mp3" target="_blank">egassemsdrawkcab.mp3</a>
+				<div class="row valign-wrapper">
+					<div class="col s4"></div>
+					<div class="input-field col s4 valign">
+						<input id="second-code" type="text" class="validate" placeholder="INPUT CODE HERE">
+					</div>
+					<div class="col s1"></div>
+					<div class="col s1 valign">
+						<button class="btn waves-effect waves-light light-blue"
+							style="vertical-align:bottom;"
+			 onclick="verifySecondCode()">
+							Submit<i class="material-icons right">send</i>
+						</button>
+					</div>
+					<div class="col s2"></div>
+				</div>
+				<div class="row">
+					<div class="col s4"></div>
+					<div class="col s4">
+						Answer: <div class="spoiler"><a  target="_blank" href="https://audiotrimmer.com/online-mp3-reverser/">Backwards Message</a></div>
+					</div>
+					<div class="col s4"></div>
+				</div>
+			</div>
+
+			<div id="part3" class="center" style="display: none">
+				<h4>Part three revealed!</h4>
+				<h4>I've already "shown" you the next code!</h4>
+				<div class="row valign-wrapper">
+					<div class="col s4"></div>
+					<div class="input-field col s4 valign">
+						<input id="third-code" type="text" class="validate" placeholder="INPUT CODE HERE">
+					</div>
+					<div class="col s1"></div>
+					<div class="col s1 valign">
+						<button class="btn waves-effect waves-light light-blue"
+							style="vertical-align:bottom;" onclick="verifyThirdCode()">
+							Submit<i class="material-icons right">send</i>
+						</button>
+					</div>
+					<div class="col s2"></div>
+				</div>
+				<div class="row">
+					<div class="col s4"></div>
+					<div class="col s4">
+						Answer: <div class="spoiler"><a target="_blank" href="https://academo.org/demos/spectrum-analyzer/">Spectographic Analyzer</a></div>
+					</div>
+					<div class="col s4"></div>
+				</div>
+			</div>
+
+			<div id="part4" class="center" style="display: none">
+				<h4>Congratulations! you win</h4>
+				Final Item hint: Sharing is caring (food specifically)!<br>
+				<img src="https://img.icons8.com/dusk/1600/confetti.png" width=400>
+			</div>
+		</div>
+		</div>
+	</body>
+</HTML>
